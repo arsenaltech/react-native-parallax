@@ -53,7 +53,7 @@ var ParallaxScrollViewComposition = React.createClass({
   },
 
   render: function() {
-    var { ref, children, scrollViewComponent, onScroll, ...props } = this.props;
+    var { children, scrollViewComponent, onScroll, ...props } = this.props;
     var { scrollY } = this.state;
     var ScrollComponent = scrollViewComponent || ScrollView;
     var handleScroll = (onScroll
